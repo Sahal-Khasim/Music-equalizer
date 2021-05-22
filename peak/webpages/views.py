@@ -4,5 +4,5 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'webpages/home.html')
 
-def contact(request):
-    return render(request, 'webpages/contact.html')
+def intro(request):
+    return render(request, 'webpages/intro.html')
