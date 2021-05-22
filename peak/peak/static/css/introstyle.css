@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  background-color: #000000;
+  padding: 0;
+  height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.3;
+    filter:alpha(opacity=40);
+    height:100%;
+    width:100%;
+}
+header{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    font-size: 45px;
+    color:#A69D9D;
+    padding-top: 140px;
+    letter-spacing: 4px;
+}
+p{
+    padding-top: 18px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #9B9494;
+    font-size: 21px;
+}
+a{
+    text-decoration: none;
+    color: #a69d9d;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    padding-top: 132px;
+    margin-left: 19px;
+    margin-right: 18px;
+}
+.Sing_in{
+    float: left;
+    margin-bottom:5px ;
+}
+.get_started{
+    float: right;
+}

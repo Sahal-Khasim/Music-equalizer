@@ -1,0 +1,233 @@
+.root{
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    background: linear-gradient(90.04deg, #000000 23.22%,
+     #111111 56.06%, #242425 76.6%, rgba(62, 62, 66, 0.320038)
+      93.34%, rgba(68, 68, 68, 0) 101.22%), #000000;
+      width: 100%;
+}
+
+
+.tab{
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+   
+    background:  #1D2717;
+}
+/* for switching effect */
+table a[data-switcher]{
+    
+    display: block;
+    padding: 24px 101px;
+    width: 102%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+table .tab:hover{
+    
+    background-color: #0000;
+}
+table td.is-active {
+    background-color: #000000;
+    
+
+}
+
+.pages .page{
+    display: none;
+
+}
+.pages .page.is-active{
+    display: block;
+}
+.Extra_space{
+    background: #1D2717;
+    padding-top: 395px;
+}
+
+/* -----------------------------------------*/
+
+/* Home page css */
+.Sign_In{
+    
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #ffff;
+    cursor: pointer;
+
+}
+a:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.PlayImg{
+    padding-top: 35px;
+    filter: grayscale(10);
+    float: left;
+    width: 75px;
+}
+
+.PlayList{
+    padding-top: 44px;
+    float: left;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px
+}
+.List-head-text{
+    font-family: 'Advent Pro', sans-serif;
+    font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 41px;
+
+color: #B9B0B0;
+}
+.Ply_png{
+    width: 8;
+}
+.tbl_plyList{font-style: normal;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 45px;
+    color: #9e9e9e;
+}
+.ply-list-item{
+    color: #9e9e9e;
+}
+
+.button_Audio{
+    color: rgb(167, 161, 161);
+    letter-spacing: 1px;
+}
+/* -----------------------------------------*/
+
+/* Audio page css */
+
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .Submit{
+    width: 34%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 78px;
+    margin: 10px 47px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form_div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .audio_caption{
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+  }
+.form_border{
+    background: #FFFFFF;
+    padding:100px;
+    border-radius: 10px;
+}
+.caption_note{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgb(153, 147, 147);
+    text-align: center;
+    padding-top: 37px;
+}
+#TypeId{
+    margin-left: 8px;
+}
+.choose_file{
+    width: 34%;
+    background-color: #282b28;
+    color: white;
+    padding: 17px 32px;
+    margin: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* -----------------------------------------*/
+
+/* Gallery page css */
+
+.user_name_text{
+    font-family: 'Aladin', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 37px;
+line-height: 45px;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+}
+.glry_plyList{font-style: normal;
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 45px;
+    color: #9e9e9e;
+    padding-top: 52px;
+    padding-left: 25px;
+}
+
+/* -----------------------------------------*/
+
+/* Guid page css */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.Guide_heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 36px;
+    
+    color: #FFFFFF;
+
+
+    
+}
+.guid_para{
+font-family: 'Ubuntu', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 26px;
+
+color: #B9B0B0;
+}
