@@ -8,7 +8,12 @@
     <title>Peak</title>
     <link rel="stylesheet" href="{% static './css/introstyle.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-image: url("{% static './images/jeremy-bishop-G9i_plbfDgk-unsplash.jpg' %}");
+        }
+    </style>
 </head>
 <body>
     <div class="row">
@@ -23,9 +28,8 @@
             Come lets join Us...</p>
 
             
-                <a  class="Sing_in" href=""><h5>Sign In</h5></a>
-                <a  class="get_started" href=""><h5>Get Started</h5></a>
-            
+                <a  class="Sing_in" href="{% url 'register' %}"><h5>Sign In</h5></a>
+                <a  class="get_started" href="{% url 'home' %}"><h5>Get Started</h5></a>
     </div>
 
 </body>
