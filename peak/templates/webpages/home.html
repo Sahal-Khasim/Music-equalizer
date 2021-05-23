@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Seaweed+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="root">
@@ -69,7 +70,47 @@
                         <div class="col-lg-5 "></div>
                     </div>
                     <div class="row ">
-                        <div class="col-lg-12  pt-5 text-center">
+                        
+
+
+                        
+                    <!-- music section -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css" rel="stylesheet"/>
+    <link href="{% static './css/style.css' %}" rel="stylesheet"/>
+    
+        
+            {% for item in page_obj %}
+        <div class="titre">
+            <h3>
+            {{item.artist}}
+            </h3>
+            <h1>
+            {{item.title}}
+            </h1>
+        </div>
+        <center><a href="{% if page_obj.has_previous %}?page={{ page_obj.previous_page_number }}{% endif %}"><i class="fa fa-step-backward fa-2x"></i></a> &nbsp; &nbsp; &nbsp; <a href="{% if page_obj.has_next %}?page={{ page_obj.next_page_number }} {% endif %}"><i class="fa fa-step-forward fa-2x"></i></a></center>
+        <div class="lecteur">
+            <audio class="fc-media" style="width: 100%;">
+            <source src="{% if item.audio_file %}{</div>
+        </div>
+        </div>{item.audio_file.url}} {% else %} {{item.audio_link}} {% endif %}" type="audio/mp3"/>
+            </audio>
+
+        </div>
+        {% endfor %}
+        
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js">
+    </script>
+    <script src="{% static './js/script.js' %}">
+    </script>
+
+<!-- musiq section -->
+                        <!-- <div class="col-lg-12  pt-5 text-center">
                             
                             <table class="ply-list-item" style="width:100%">
                                 
@@ -82,14 +123,15 @@
 
                                 <tr>
                                     <td>1</td>
-                                    <td class="pl-5 text-left ">song</td>
+                                    <td class="pl-5 text-left ">{{ item.title }}</td>
                                     <td class="p-2 "><a href=""><img class="Ply_png" src="{% static './assets/images/icons8-play-24.png' %}" alt=""></a></td>
                                     <td class="p-2 "><a href=""><img class="Ply_png" src="{% static './assets/images/icons8-plus-24.png' %}" alt=""></a></td>
                                     
                                 </tr>
                             </table>
                             
-                        </div>
+                        </div> -->
+                        
                     </div>
 
 
