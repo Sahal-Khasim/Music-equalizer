@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEAK Music-Equalizer</title>
     <link rel="stylesheet" href="style/registerstyle.css">
+=======
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK Music-Equalizer</title>
+    <link rel="stylesheet" href="{% static './css/registerstyle.css' %}">
+>>>>>>> 2bc7ea02b05a59da1de20de1bb86e13a12d93cd5
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body id="body">
@@ -59,7 +67,11 @@
                 
                 <div class="col-md-6 pb-5">
                     <a class="btn btn-success btn-rgr" href="home.html">Register</a>
+<<<<<<< HEAD
                     <a class="pt-4 text-secondary" href="login.html"><p ></p>already have an account?</p></a>
+=======
+                    <a class="pt-4 text-secondary" href="{% url 'login' %}"><p ></p>already have an account?</p></a>
+>>>>>>> 2bc7ea02b05a59da1de20de1bb86e13a12d93cd5
                 </div>
 
                 

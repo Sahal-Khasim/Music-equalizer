@@ -1,12 +1,12 @@
 body{
-  margin: 0;
-  background-color: #000000;
-  padding: 0;
-  height: 720px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    margin: 0;
+    background-color: #000000;
+    padding: 0;
+    height: 720px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 body:before {
     content: "";
@@ -52,7 +52,18 @@ a{
 .Sing_in{
     float: left;
     margin-bottom:5px ;
+    
 }
+.Sing_in:hover{
+    color: rgb(30, 130, 218);
+}
+
+
+
 .get_started{
     float: right;
+}
+
+.get_started:hover{
+    color: rgb(30, 130, 218);;
 }
