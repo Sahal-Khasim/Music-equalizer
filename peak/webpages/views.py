@@ -4,10 +4,9 @@ from . models import Song
 
 # Create your views here.
 def home(request):
-    paginator= Paginator(Song.objects.all(),1)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    context={"page_obj":page_obj}
+    paginator= Song.objects.all()
+
+    context={"paginator":paginator}
     return render(request, 'webpages/home.html', context)
 
 def intro(request):
@@ -18,6 +17,8 @@ def register(request):
 
 def login(request):
     return render(request, 'webpages/login.html')
+
+
 
 
 
