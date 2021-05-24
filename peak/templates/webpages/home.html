@@ -78,10 +78,6 @@
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css" rel="stylesheet"/>
     <link href="{% static './css/style.css' %}" rel="stylesheet"/>
-    
-
-
-
 
         
 
@@ -94,8 +90,9 @@
     </script>
 
 <!-- musiq section -->
+
                         <div class="col-lg-12  pt-5 text-center">
-                            
+
                             <table class="ply-list-item" style="width:100%">
                                 
                                 <tr>
@@ -106,9 +103,11 @@
                                 </tr>
                                     {% for file in  songs_all %}
                                 <tr>
+
                                     <td>{{ file.id }}</td>
                                     <td class="pl-5 text-left ">{{ file.title }}</td>
                                     <td class="p-2 "><audio  src="{{ file.song_file.url }}" controls="controls"></audio></audio</td>
+
                                     <td class="p-2 "><a href=""><img class="Ply_png" src="{% static './assets/images/icons8-plus-24.png' %}" alt=""></a></td>
 
                                 </tr>
@@ -123,6 +122,7 @@
                         </div>
                         
                     </div>
+
 
 
                     <div class="row ">
