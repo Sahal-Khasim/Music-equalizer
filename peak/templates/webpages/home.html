@@ -52,7 +52,11 @@
                     <div class="row ">
                         <div class="col-lg-10"></div>
                         <div class="p-2 col-lg-2 text-center">
+                            {% if user.is_authenticated %}
+                            <a class="Sign_In" href="{% url 'logout_user' %}">Log out</a>
+                            {% else %}
                             <a class="Sign_In" href="{% url 'register' %}">Sign In</a>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="row ">
@@ -194,7 +198,7 @@
                     <div class="row">
                         <div class="col-lg-1"></div>
                         <div class="p-5 col-lg-11">
-                            <h4 class="user_name_text">Hello! User Name</h4>
+                            <h4 class="user_name_text">Hello! {{request.user.username}}</h4>
                             
                         </div>
                     </div>
